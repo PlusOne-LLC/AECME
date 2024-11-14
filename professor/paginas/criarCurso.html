@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Curso</title>
+    <link rel="stylesheet" href="../../estilos/professor/criarCurso.css">
+</head>
+<body>
+
+
+    <!-- MAIN  -->
+    <main>
+        <form id="CCurso">
+
+        
+            <h1>Adicionar Curso</h1>
+            <!-- primeiro aside onde estão os inputs e as fotos -->
+            <aside class="primeiro">
+                <!-- div dos inputs  -->
+                <div class="inputs">
+                    <!-- div de escolher nome  -->
+                    <div class="Nome">
+                        <!-- <h3>Nome:</h3> -->
+                        <label for="nomeC">Nome</label>
+                        <input type="text" placeholder="Escreva o nome do curso..." id="nomeC">
+                    </div>
+                    <div class="Categoria">
+                        <!-- <h3>Categoria do curso:</h3> -->
+                        <label for="opt">Categoria do Curso</label>
+                        <select name="" id="opt" >
+                            <option value="">Escolher Categoria</option>
+                            <option value="">Programação</option>
+                            <option value="">Marketing</option>
+                            <option value="">Redes</option>
+                        </select>
+                    </div>
+                    <div class="Requisitos">
+                        <!-- <h3>Requisitos:</h3> -->
+                        <label for="Requisitos">Requisitos para fazer o curso</label>
+                        <input type="text" placeholder="Materiais para fazer o seu curso..." id="Requisitos">
+                    </div>
+                    <div class="Descricao">
+                        <!-- <h3>Descrição do curso:</h3> -->
+                        <label for="descricao">Descrição do Curso</label>
+                        <textarea name="" id="descricao" cols="30" rows="10" 
+                        placeholder="Descrição do Curso...."></textarea>
+                    </div>
+                </div>
+                <!-- div das fotos  -->
+                <div class="fotos">
+                    <div class="capa">
+                        Escolha uma foto de capa 
+                        <img src="../../imagens/icons/add-image-photo-icon.png" alt="">
+                    </div>
+
+                    <div class="Vapresentação">
+                        Escolha um video de apresentação
+                        <img src="../../imagens/icons/cursos.png" alt="">
+                    </div>
+              
+
+                 
+      
+                </div>
+            </aside>
+            <!-- segundo aside onde estão os botões  -->
+            <aside class="segundo">
+                <button type="submit">Adicionar Curso</button>
+                <!-- <button type="reset">Cancelar</button> -->
+            </aside>
+    </form>
+    </main>
+
+    <!-- FOOTER -->
+    <!-- <footer></footer> -->
+</body>
+</html>

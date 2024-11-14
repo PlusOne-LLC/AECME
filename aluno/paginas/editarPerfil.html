@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil | AECME</title>
+    <link rel="stylesheet" href="../../estilos/professor/editarP.css">
+</head>
+<body>
+   <div class="back">
+    <a href="./perfil.html">Voltar</a>
+   </div>
+    <main>    
+        <section id="left">
+            <div class="foto">
+                <a href="../../imagens/perfil/testimonials-2.jpg"><img src="../../imagens/perfil/testimonials-2.jpg" alt="foto de perfil"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="ativo" id="btnConta">Conta</li>
+                    <li id="btndescricao">Descrição</li>
+                    <li id="btnPerfil">Foto de Perfil</li>
+                    <li id="btnSenha">Palavra-passe</li>
+                    <!-- <li id="btnDadosAdicionais">Dados Adicionais</li> -->
+                    <li class="red" id="btnEliminarPerfil">Eliminar Perfil</li>
+                    
+                </ul>
+             </nav>
+        </section>
+     
+
+        <section id="right">
+            <aside class="cont ativo" id="conta">
+                <h1>Editar dados da sua conta</h1>
+                <form action="">
+                    <label for="nome">Seu Nome Completo</label>
+                    <input type="text" name="nome" id="nome" value="Inacio Kassinga">
+                    <label for="">Usuario</label>
+                    <input type="username" name="usuario" id="usuario" value="@usuario">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" value="exemplo@gmail.com">
+                    <div class="btn">
+                        <button type="submit">Actulizar</button>
+                    </div>
+                  
+                </form>
+            </aside>
+            <aside class="cont" id="senha">
+                <h1>Editar senha</h1>
+                <form action="">
+                    <label for="">Senha actual</label>
+                    <input type="password" name="senha" id="senha" >
+                    <label for="">Senha nova</label>
+                    <input type="password" name="Nsenha" id="Nsenha" >
+                    <label for="">Confirme a senha</label>
+                    <input type="password" name="Rsenha" id="Rsenha" >
+                    <div class="btn">
+                        <button type="submit">Actulizar</button>
+                    </div>
+                  
+                </form>
+            </aside>
+            <aside class="cont" id="descricao">
+                <h1>Editar sua Descrição</h1>
+                <form action="">
+                    <label for="descricao">Sua Descrição</label>
+                    <textarea name="descricao" id="descricao">
+
+                    </textarea>
+                    <div class="btn">
+                        <button type="submit">Actulizar</button>
+                    </div>
+                  
+                </form>
+            </aside>
+            <aside class="cont"  id="foto">
+                <h1>Actulizar sua Foto de perfil</h1>
+                <form action="">
+                    <div class="foto">
+                        <img src="../../imagens/perfil/testimonials-2.jpg" alt="">
+                        <input type="file" name="" id="">
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Actulizar</button>
+                    </div>
+                  
+                </form>
+            </aside>
+            <aside class="cont" id="especialidade">
+                <h1>Editar suas Especialidades</h1>
+                <form action="">
+                   <input type="text">
+                    <div class="btn">
+                        <button type="submit">Actulizar</button>
+                    </div>
+                  
+                </form>
+            </aside>
+            <aside class="cont" id="dadosA">
+                <h1>Dados Adicionais</h1>
+                <form action="">
+                    <label for="escola">Escola onde Leciona</label>
+                    <input type="text" name="escola" id="escola">
+                   <label for="morada">Morada</label>
+                   <input type="text" name="morada" id="morada">
+                   <label for="idade">Idade</label>
+                   <input type="text" name="idade" id="morada">
+                    <div class="btn">
+                        <button type="submit">Actulizar</button>
+                    </div>
+                  
+                </form>
+            </aside>
+        </section>
+    </main>
+    <script src="../../scripts/editarP.js"></script>
+
+</body>
+</html>

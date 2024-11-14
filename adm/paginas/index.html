@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../estilos/adm/index.css">
+  <title>Administrador</title>
+</head>
+
+<body>
+  
+<div id="Cxloading">
+    <div class="loader">
+        <div class="dot d1"></div>
+        <div class="dot d2"></div>
+        <div class="dot d3"></div>
+    </div>
+</div>
+
+<div id="siteTodo">
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="">
+                    <h1>AECME</h1>
+                </a>
+
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#top" class="nav-link active1">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Mensagens</a></li>
+                <li class="nav-item drop-hover">
+                    <a href="#" class="nav-link">Gerir <img src="../../imagens/icons/caret-down-fill.svg" alt=""></a>
+                    <div class="drop">
+                        <a href="./addCategoria.html">categorias</a> 
+                        <a href="./gerirProfessor.html">Professores</a> 
+                        <a href="./gerirAlunos.html">Alunos</a> 
+                        <a href="./gerirTestemunhos.html">Testemunhos</a> 
+                    </div>
+                </li>
+            </ul>
+
+
+            <div class="botoes">
+                <div>
+                    <button type="button" id="login1">Sair</button>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+<main>
+    <section id="top">
+        <div class="texto">
+            <h1>Sujeito Homem</h1>
+            <p>Sege bem-vindo a área administrativa</p>
+        </div>
+    </section>  
+    
+    <h1>Principais actividades</h1>
+    <section id="actividades">
+        <div class="card">
+            <div class="capa">
+                <a href="./addCategoria.html"><img src="../../imagens/multi-uso/tab-1.png" alt="capa"></a>
+            </div>
+            <div class="texto">
+                <a href="addCategoria.html">Adicionar categoria</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="capa">
+                <a href="./gerirProfessor.html"><img src="../../imagens/multi-uso/tab-2.png" alt="capa"></a>
+            </div>
+            <div class="texto">
+                <a href="./gerirProfessor.html">Gerir Professores</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="capa">
+                <a href="#"><img src="../../imagens/multi-uso/tab-3.png" alt="capa"></a>
+            </div>
+            <div class="texto">
+                <a href="gerirAlunos.html">Gerir Alunos</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="capa">
+                <a href="./gerirCurso.html"><img src="../../imagens/multi-uso/tab-4.png" alt="capa"></a>
+            </div>
+            <div class="texto">
+                <a href="./gerirCurso.html">Gerir Cursos</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="capa">
+                <a href="./gerirTestemunhos.html"><img src="../../imagens/multi-uso/tab-5.png" alt="capa"></a>
+            </div>
+            <div class="texto">
+                <a href="./gerirTestemunhos.html">Gerir Testemunhos</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="capa">
+                <a href="./gerirUsuarioBloqueado.html"><img src="../../imagens/multi-uso/tab-4.png" alt="capa"></a>
+            </div>
+            <div class="texto">
+                <a href="./gerirUsuarioBloqueado.html">Gerir Usuários bloqueados</a>
+            </div>
+        </div>
+    </section>
+    <h1>Alguns dados sobre a plataforma </h1>
+    <section id="dadosSite">
+        <div class="card">
+            <div class="numero">
+                10
+            </div>
+            <h2>Alunos</h2>
+        </div>
+        <div class="card">
+            <div class="numero">
+                20
+            </div>
+            <h2>Professores</h2>
+        </div>
+        <div class="card">
+            <div class="numero">
+                30
+            </div>
+            <h2>Cursos</h2>
+        </div>
+        <div class="card">
+            <div class="numero">
+                40
+            </div>
+            <h2>Testemunhos</h2>
+        </div>
+        <div class="card">
+            <div class="numero">
+                50
+            </div>
+            <h2>Comunidades</h2>
+        </div>
+        <div class="card">
+            <div class="numero">
+                60
+            </div>
+            <h2>Mensagens</h2>
+        </div>
+    </section>
+    
+    <footer>
+        <h1>Granda Footer</h1>
+    </footer>
+</main>
+
+</div> <!-- Fim da div do conteudo todo   -->
+  
+  <!--  Javascript -->
+  <script src="../../scripts/loading.js"></script>
+  <script src="../../scripts/header.js"></script>
+</body>
+</html>

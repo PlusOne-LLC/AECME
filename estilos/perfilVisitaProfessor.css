@@ -1,0 +1,851 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --corAzul1:#0737bd;
+    --corVerde:rgb(39, 230, 141);
+    --corAzul2: #236fc5;
+    --corbranca1: #f0f6f7;
+
+}
+body {
+    background-color: #fff;
+   
+}
+/* loading  */
+#Cxloading{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    position: absolute;
+}
+.loader{
+    display: flex;
+}
+.dot{
+    width: 50px;
+    height: 50px;
+    background-color: var(--cor1);
+    border-radius: 50%;
+    animation: scaling 1s ease-in-out infinite;
+    margin: 0px 20px;
+}
+.dot.d1{
+    animation-delay: -0.32s;
+}
+.dot.d3{
+    animation-delay: 0.32s;
+}
+@keyframes scaling{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+}
+@media (max-width: 780px){
+    .dot{
+        width: 30px;
+        height: 30px;
+        margin: 0px 10px;
+    }
+}
+
+
+/*!==============================fim do loading========================================!*/
+
+#conteudo{
+    display: none;
+}
+header{
+    background: white;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 75px;
+    border-top: 7px solid  var(--cor1);
+    box-shadow: 1px 1px 20px rgba(148, 147, 147, 0.377);
+}
+
+header nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+header nav  .logo a{
+    text-decoration: none;
+    color: black;
+}
+ nav.navbar{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between; 
+    padding: 0 40px;
+    height: 100%;
+}
+
+header ul.nav-menu{
+    display: flex;
+    align-items: center;
+    height: 96%;
+}
+
+header ul.nav-menu li{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+header ul.nav-menu li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ease;
+    padding: 32px;
+}
+
+header ul.nav-menu li a:hover{
+    background-color: var(--cor1);
+    /* background: rgb(52, 22, 109); */
+    color: white;
+}
+
+header .hamburger{
+    display: none;
+    cursor: pointer;
+}
+header .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background: #fff;
+    transition: all o.3s ease-in-out;
+}
+@media (max-width:768px){
+    header .bar{
+        background-color: rgb(28, 82, 145);
+    }
+    header .hamburger{
+       margin-top: 20px;
+    }
+    header .hamburger{
+        display: block;
+    }
+    header .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    header .hamburger.active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg);
+    }
+    header  .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+     }
+
+    header ul.nav-menu li {
+        margin: auto;
+        padding: 0px;
+        width: 98%;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        
+    }
+
+    header ul.nav-menu li:hover{
+        border: 2px solid darkblue;
+    }
+    header ul.nav-menu li a{
+        padding: 5px;
+        color: #0a0a0a;
+    }
+    header ul.nav-menu li a:hover {
+        background: transparent;
+        color: aqua;
+    }
+    header ul.nav-menu{
+        height: 170px;
+        position: fixed;
+        left: -100%;
+        top: 75px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+        background: #ffffff;
+        overflow: hidden;
+     }
+     header .nav-item{
+        margin: 0px;
+
+     }
+     header .nav-menu.active{
+        left: 0;
+     }
+}
+
+main {
+
+}
+
+main > h1 {
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+main section#top {
+    width: 100%;
+
+    min-height: 500px;
+    
+}
+
+main section#top .profile-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 4%;
+    padding-bottom: 20px;
+    background-image: url("../imagens/multi-uso/slide_01.jpg");
+    background-color: #1596ff;
+    background-size: cover;
+    background-position: center;
+}
+main section#top .profile-header aside.perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+    margin-top: 10px;
+}
+main section#top .profile-header aside.perfil div.dadosP{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    text-align: center;
+}
+main section#top .profile-header aside.perfil div.containerRedes{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  
+}
+main section#top .profile-header aside.perfil div.containerRedes hr{
+    width: 100%;
+    margin: 8px 0;
+}
+main section#top .profile-header aside.perfil div.containerRedes > h2{
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+main section#top .profile-header aside.perfil div.containerRedes div.ola{
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  padding: 30px 5px;
+  text-align: center;
+  border-radius: 20px;
+}
+main section#top .profile-header aside.perfil div.containerRedes div.ola h1{
+  color: #0288d1;
+  width: 100%;
+}
+main section#top .profile-header aside.perfil div.containerRedes ul.redes{
+    /* background-color: green; */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+main section#top .profile-header aside.perfil div.containerRedes ul.redes li{
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+main section#top .profile-header aside.botoes {
+    display: flex;
+    width: 100%;
+    /* flex-wrap: wrap; */
+}
+
+main section#top .profile-header aside.botoes a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #0288d1;
+    border-radius: 8px;
+    transition: 0.3s;
+    height: 50px;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 18px;
+}
+main section#top .profile-header aside.botoes a img.iconchat{
+height: 150%;
+width: 40%;
+
+}
+
+main section#top .profile-header aside.botoes a:hover {
+    background-color: #10c25a;
+    transition: all 0.3s ease-in-out;
+}
+
+main section#top .profile-header img.FotodoProfessor {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rebeccapurple;
+}
+
+main section#top .profile-header h1 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.profile-header p {
+    font-size: 16px;
+}
+
+main section#top .info-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+main section#top .info-section div {
+    flex: 1;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in-out;
+    min-width: 150px;
+}
+
+main section#top .info-section h2 {
+    color: #0288d1; /* Azul escuro */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+main section#top .info-section p {
+    font-size: 14px;
+}
+
+main section.itens{
+    min-height: 300px;
+    width: 100%;
+    animation: fadeIn 3s ease-in-out;
+    margin: 10vh 0;
+}
+main section.itens h1{
+    color: #0288d1;
+    font-weight:normal;
+    font-size: 2rem;
+    width: 90%;
+    margin:  9px auto;
+    padding: 0;
+}
+main section.itens hr{
+    width: 90%;
+    margin: auto;
+    background-color: rgb(2, 197, 171);
+    border: none;
+    height: 2px;
+}
+main section.itens ul{
+    list-style: none;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(2, 197, 171);
+    padding: 25px 0;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+main section.itens ul li{
+    cursor: pointer;
+background-color: #fff;
+height: 100%;
+padding: 10px 0;
+width: 25%;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 20px;
+flex-direction: column;
+transition: all .5s ease-in-out;
+}
+main section.itens ul li:hover{
+ box-shadow: 0 15px 20px #0a0a0a28;
+ transform: translateY(-20px);
+}
+main section.itens ul li p{
+font-weight: 600;
+color: #0a0a0a;
+}
+main section.itens ul li span{
+height: 110px;
+width: 110px;
+}
+main section.itens ul li span img{
+height: 85%;
+width: 85%;
+}
+
+
+/* gvhjbsknkmdnkmf */
+
+ ul.redes{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 7px;
+   
+   }
+    ul.redes li {
+   
+     height: 30px;
+     width: 30px;
+     border-radius: 50%;
+     margin-top: 10px;
+     transition: all 0.3s ease-in-out;
+   
+   }
+    ul.redes li:hover{
+     border: none;
+     transform: scale(.9);
+     filter: brightness(70%);
+   }
+    ul.redes li a{
+     height: 30px;
+     width: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   }
+    ul.redes li a img{
+     height: 80%;
+     width: 80%;
+     overflow: hidden;
+   
+   }
+    /* jhbdhjbdjnhkjn    */
+
+    @media (max-width: 769px)
+    {
+       main section#top {
+           width: 100%;
+           height: 100%;
+           margin: 0;
+           padding: 0;
+       }
+       main section#top .profile-header aside.botoes a {
+        width: 90%;
+    }
+       main section#top .profile-header aside.perfil {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        flex-direction: column;
+
+    }
+    main section#top .profile-header aside.perfil div.dadosP{
+        width: 90%;
+        
+
+    }
+    main section#top .profile-header aside.perfil div.containerRedes{
+        width: 90%;
+      
+    }
+    main section#top .profile-header aside.perfil div.containerRedes div.ola{
+        background-color: transparent;
+      }
+      main section#top .profile-header aside.perfil div.containerRedes div.ola h1{
+        color: #0288d1;
+        font-weight: normal;
+        width: 100%;
+        font-size: 2.2rem;
+      }
+       main section.itens{
+           height: 100%;
+           width: 100%;
+       }
+       main section.itens ul{
+           height: 100%;
+           width: 95%;
+           margin: 10px auto;
+           gap: 10px;
+           }
+       main section.itens ul li{
+           width: 45%;
+           display: flex;
+           align-items: center;
+           margin:20px auto;
+           padding: 20px 0;
+           }
+       main section.itens ul li span{
+           height: 20%;
+           width: 20%;
+           }
+           main section.itens ul li p{
+            width: 100%;
+            text-align: center;
+           }
+           
+   }
+
+
+
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+section#meusCursos{
+    width: 100%;
+    min-height: 560px;
+    
+}
+section#meusCursos h1#me{
+   color: #0288d1;
+   font-size: 2rem;
+   font-weight: normal;
+   width: 90%;
+   text-align: left;
+   margin: auto;
+}
+section#meusCursos hr{
+    border: none;
+    margin: auto;
+    width: 90%;
+    height: 2px;
+    background-color: rgb(2, 197, 171);
+}
+div.curso-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    width: 95%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    margin: 15px;
+    
+}
+
+
+div.card-curso{
+  height: 330px;
+  width: 280px;
+  background-color: #fff;
+  border-radius: 20px;
+
+  transition: .3s ease-in-out;
+  box-shadow: 0px 1px 3px 2px #0000003a;
+}
+
+div.card-curso div.foto-card{
+  height: 55%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #9072;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  gap: 5px;
+}
+div.card-curso div.foto-card img{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: .3s ease-in-out;
+}
+div.card-curso div.foto-card img:hover{
+transform: scale(1.2);
+}
+div.card-curso div.conteudo{
+margin: 0;
+padding: 0;
+overflow: none;
+width: 100%;
+height: 45%;
+
+}
+div.card-curso div.conteudo div.titulo-preco{
+width: 95%;
+padding: 0 9px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 8px;
+}
+div.card-curso div.conteudo div.titulo-preco h3{
+margin: 10px 0px 0px 0px;
+  font-weight: 500;
+}
+div.card-curso div.conteudo div.titulo-preco span{
+  font-weight: 600;
+  color: #442333;
+}
+div.card-curso div.conteudo div.professor{
+width: 100%;
+height: 40px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+cursor: pointer;
+}
+div.card-curso div.conteudo div.professor h3{
+  font-weight: 400;
+  margin: 0;
+}
+div.card-curso div.conteudo div.professor img{
+height: 40px;
+width: 40px;
+border-radius: 20px;
+border: solid 1px rgb(79, 233, 79);
+}
+
+div.card-curso div.conteudo div.btn{
+width: 100%;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+div.card-curso div.conteudo div.btn a{
+padding: 10px 80px;
+border: none;
+text-decoration: none;
+background-color: rgb(38, 78, 211);
+border-radius: 5px;
+display: flex;
+cursor: pointer;
+color: #fff;
+font-weight: 600;
+font-size: 15px;
+transition: .3s ease-in-out;
+}
+div.card-curso div.conteudo div.btn a:hover{
+transform: scale(0.9);
+}
+@media (max-width: 769px) {
+section#meusCursos{
+  max-height: 3900px;
+  width: 100%;
+  padding: 0;
+  margin: 10px 0;
+}
+section#meusCursos div.curso-content{
+ margin: 10px 0;
+ padding: 0;
+ width: 95%;
+}
+}
+
+main section.classificacao{
+     gap: 5px;
+    height: 80vh;
+    width: 100%;
+    padding: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    background-image: url("../imagens/multi-uso/banner2.jpg");
+}
+
+main section.classificacao aside.right{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+main section.classificacao h1{
+    width: 90%;
+    padding: 0;
+    margin: 0 0 0 20px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 2rem;
+}
+main section.classificacao p{
+    width: 90%;
+    padding: 0;
+    margin: 4px 0 30px  20px;
+    color: rgb(25, 182, 108);
+    font-weight: normal;
+    font-size: 19px;
+}
+
+div.skills{
+    width: 90%;
+    height: 100%;
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+div.skills h3{
+font-weight: 500;
+font-size: 24px;
+margin: 5px 1px;
+color: #fff;
+}
+
+
+div.skills ul{
+    list-style: none;
+}
+div.skills ul li{
+    margin: 20px 0;
+    gap: 10px;
+}
+div.skills ul li span.barras{
+  background-color: #fffdfd;
+  display: block;
+  height: 20px;
+  width: 70%;
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+  transition: .5s ease-in-out;
+}
+div.skills ul li span.barras > span.bom{
+     height: 20px;
+     background: rgb(34, 202, 85);
+     position: absolute;
+     width: 85%;
+}
+div.skills ul li span.barras > span.medio{
+     height: 20px;
+     background: rgb(8, 132, 233);
+     position: absolute;
+     width: 70%;
+}
+div.skills ul li span.barras > span.mau{
+     height: 20px;
+     background: rgb(241, 35, 35);
+     position: absolute;
+     width: 50%;
+}
+div.skills ul li span.barras span.bom{
+  width: 85%;
+  animation: bom 7s;
+}
+div.skills ul li span.barras span.medio{
+  width: 70%;
+  animation: medio 7s;
+}
+div.skills ul li span.barras span.mau{
+  width: 50%;
+  animation: mau 7s;
+}
+
+
+@keyframes bom {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+@keyframes medio {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes mau {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@media (max-width: 650px) {
+    main section.classificacao{
+          width: 100%;
+          height: 100%;
+          background-color: #0288d1;
+        }
+    main section.classificacao aside.right{
+        width: 100%;        
+        }
+    main section.classificacao aside.right div.skills{
+        width: 100%;
+        height: 80%;
+        }
+        div.skills ul li span.barras{
+            width: 90%;
+            margin: auto;
+          }
+          div.skills h3{
+           margin-left: 25px;
+            }
+}

@@ -1,0 +1,230 @@
+    
+    :root{
+        --cor1: #f4f4f4;
+          --corAzul1:#0737bd;
+          --corVerde:rgb(56, 223, 145);
+          --corAzul2: #2a79d3;
+          --corbranca1: #f0f6f7;
+          
+      
+      }
+    footer{
+        margin-top: 0px;
+        height: 70vh;
+        width: 100%;
+        background: var(--corAzul2);
+    }
+    
+    footer div.conteudo{
+        height: 80%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    
+    }
+    footer div.conteudo div.logo{
+     width: 35%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-left: 2%;
+    
+    }
+    
+    footer div.conteudo div.logo div.img{
+     width: 180px;
+     height: 180px;
+     margin-left: 30px;
+    
+    }
+    footer div.conteudo div.logo img{
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+    }
+    footer div.conteudo div.links{
+     width: 35%;
+     margin-left: 5%;
+    }
+  
+    footer div.conteudo div.links h1{
+        color: #fff;
+        font-size: 25px;
+    
+    }
+    footer div.conteudo div.links ul{
+     list-style: none;
+    
+    }
+    footer div.conteudo div.links li,a{
+    color: black;
+    text-decoration: none;
+    margin: 5px 0px;
+    transition: all .3s ease-in-out;
+    }
+    footer div.conteudo div.links li a:hover{
+     color:rgb(65, 185, 65) ;
+    }
+    footer div.conteudo div.contactos{
+     width: 35%;
+  
+    }
+    footer div.conteudo div.contactos h1{
+     color: #fff;
+     font-size: 25px;
+    }
+    footer div.conteudo div.contactos ul{
+     list-style: none;
+     height: 100%;
+     width: 100%;
+    }
+    footer div.conteudo div.contactos ul li{
+     height: 20%;
+     width: 100%;
+     margin: 7px 0;
+    }
+    footer div.conteudo div.contactos ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    transition: all .3s ease-in-out;
+    }
+    footer div.conteudo div.contactos ul li a:hover{
+        color: var(--corVerde);
+        }
+    footer div.conteudo div.contactos ul li a span img{
+     height: 25px;
+     width: 25px;
+    }
+    footer hr{
+        width: 90%;
+        padding: 1px;
+        margin: 10px auto;
+        border: none;
+        background-color: #fff;
+    }
+    footer div.bottom{
+        width: 100%;
+        height: 20%;
+        background-color: var(--corVerde);
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+    footer div.bottom aside.left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    font-size: 17px;
+    
+    }
+    footer div.bottom aside.rigth{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    footer div.bottom aside.rigth ul{
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    }
+    footer div.bottom aside.rigth ul li{
+    height: 4%;
+    width: 4%;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    }
+    footer div.bottom aside.rigth ul li img{
+      height: 100%;
+      width: 100%;
+      padding: 5px;
+   
+      transition: all .3s ease-in-out;
+      }
+    footer div.bottom aside.rigth ul li img:hover{
+      border-radius: 35%;
+      background: #fff;
+      transform: translateY(-5px);
+    }
+  
+    
+    @media (max-width: 769px) 
+    {
+        footer{
+            height: 650px;
+            width: 100%;
+            border-radius: 0;
+        }
+        footer div.conteudo{
+            height: 80%;
+            width: 100%;
+            flex-direction: column;
+            margin: 0;
+            
+        }
+        footer div.conteudo div.logo{
+            width: 90%;
+            display: flex;
+            align-items: center;
+           
+           }
+           
+           footer div.conteudo div.logo div.img{
+            height: 100px;
+            width: 100px;
+            margin: 50px 0 0 0px;
+           
+           }
+           footer div.conteudo div.links{
+            width: 90%;
+            margin: 0px 0 0 0px;
+           }
+       
+           footer div.conteudo div.contactos{
+            width: 90%;
+            margin: 0px 0 0 0px;
+           }
+    
+           footer div.bottom{
+            width: 100%;
+            height: 20%;
+            margin-top: 30px;
+            gap: 5px;
+            flex-direction: column;
+        }
+        footer div.bottom aside.left{
+         width: 100%;
+         height: 50%;
+         margin-top: 20px;
+        }
+        footer div.bottom aside.left p{
+          font-size: 15px;
+        }
+        footer div.bottom aside.right{
+         width: 100%;
+         height: 50%;
+         margin-top: 0px;
+        }
+        footer div.bottom aside.rigth ul li img{
+          height: 25px;
+          width: 25px;
+          }
+    }

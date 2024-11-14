@@ -1,0 +1,94 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/adm/imagens/slide_01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main{
+    width: 100%;
+    }
+main div.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main div.container h1{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+main div.container form{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+}
+div.container form div.inputs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+div.container form div.inputs input{
+    display: block;
+    height: 30px;
+    outline: none;
+    width: 50%;
+    border: solid 0.5px #fff;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 17px;
+    transition: .3s;
+}
+div.container form div.inputs input:hover{
+    background-color: #eeeeee;
+}
+main div.container form div.button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main div.container form div.button button a{
+    text-decoration: none;
+    color: #fff;
+}
+main div.container form div.button button{
+    width: 52%;
+    height: 50px;
+    border-radius: 25px;
+    border: solid 0.5px black;
+    font-size: 18px;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+main div.container form div.button button:hover{
+    background-color: #333232;
+    border: solid 0.5px #333232;
+    color: #e6e1e1;
+}
+@media (max-width:710px) 
+{
+    main, main div.container,main div.container form, main div.container form div.inputs, main div.container form div.button{
+        width: 100%;
+        }
+ main div.container form div.inputs input, main div.container form div.button button{
+        width: 97%;
+        }
+  
+}

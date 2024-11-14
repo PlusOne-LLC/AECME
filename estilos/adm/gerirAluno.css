@@ -1,0 +1,271 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --corAzul1:#0737bd;
+    --corVerde:rgb(39, 230, 141);
+    --corAzul2: #236fc5;
+    --corbranca1: #f0f6f7;
+
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+section#top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-image: url(../../imagens/multi-uso/banner.jpg);
+}
+
+section#top .texto {
+    width: 60%;
+    color: #fff;
+}
+
+section#top .texto h1 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+
+section#professores {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    padding-top: 10px;
+}
+section#professores p i{
+   color: rgb(58, 214, 118);
+   font-size: 17px;
+   font-weight: normal;
+}
+section#professores h1{
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
+    font-size: 2rem;
+  
+}
+section#professores h1#mais{
+    width: 100%;
+    font-weight: normal;
+    text-align: center;
+}
+section#professores h1#mais a{
+  background-color: #236fc5;
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  padding: 10px 50px;
+  width: 100%;
+  border-radius: 10px;
+  transition: .3s;
+}
+section#professores h1#mais a:hover{
+  background-color: #2d5079;
+
+}
+section#professores p{
+    width: 100%;
+    text-align: center;
+  color: var(--corVerde);
+}
+section#professores  aside{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    width: 90%;
+}
+
+section#professores div.card{
+    width: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.425);
+    margin: 10px 0px;
+    padding: 30px 5px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+section#professores div.card:hover{
+    transform: translateY(-10px);
+}
+section#professores aside div.card div.imagem{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 50%; */
+    /* background-color: yellow; */
+}
+section#professores aside div.card div.imagem div.container{
+    width: 140px;
+    height: 140px;
+}
+section#professores aside div.card div.imagem img{
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+}
+section#professores aside div.card div.descricao{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+section#professores aside div.card div.descricao h2,h3{
+    font-size: 19px;
+    padding: 4px 0px;
+    font-weight: 500;
+
+}
+section#professores aside div.card div.button{
+    display: flex;
+    /* justify-content: center; */
+    /* padding: 10px 60px; */
+    /* border-radius: 25px; */
+    transition: all 0.5s ease-in-out;
+    /* border: solid 1px var(--corAzul2); */
+    gap: 20px;
+    
+}
+section#professores aside div.card div.button a{
+  background-color: var(--corAzul2);
+    display: flex;
+    align-items: center;
+    border-radius: 18px;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+    padding: 10px;
+    width: 100%;
+}
+section#professores aside div.card div.button a:hover{
+cursor: pointer;
+background-color: var(--corVerde);
+color: white;
+/* border: solid black 1px; */
+}
+section#professores aside div.card div.button a.bloquear:hover{
+cursor: pointer;
+background-color: red;
+color: white;
+/* border: solid black 1px; */
+}
+
+section#professores aside div.card div.button a{
+    text-decoration: none;
+    color: #050505;
+
+
+}
+
+
+section#professores aside div.card div.descricao hr{
+    width: 70%;
+    
+}
+section#professores aside div.card div.descricao ul{
+ list-style: none;
+ display: flex;
+ align-items: center;
+ padding: 10px;
+ gap: 7px;
+
+}
+section#professores aside div.card div.descricao ul li {
+  width: 100%;
+  height: 45%;
+  border-radius: 50%;
+  padding: 5px;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+
+}
+section#professores aside div.card div.descricao ul li:hover{
+  background-color:  var(--corVerde);
+  transform: scale(.8);
+}
+section#professores aside div.card div.descricao ul li a img{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+
+ 
+@media (max-width:960px){
+  section#professores{
+     padding: 10px;
+  }
+  section#professores div.card{
+    width: 95%;
+   }
+  section#professores aside div.card div.imagem{
+    width: 100%;
+    margin-bottom: 1pc;
+  }
+  section#professores aside div.card div.imagem div.container{
+    width: 100px;
+    height: 100px;
+}
+  section#professores aside div.card div.imagem div.container img{
+    width: 100%;
+    height: 100%;
+}
+  section#professores aside div.card div.descricao{
+    /* background-color: red; */
+    width: 100%;
+  }
+  section#professores aside div.card div.descricao hr{
+    width: 80%;
+  }
+  section#professores aside{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+    width: 90%;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+section#professores aside div.card div.button {
+    width: 100%;
+    height: 40px;
+  gap: 10px;
+}
+section#professores aside div.card div.descricao ul li {
+    width: 35px;
+    height: 35px;
+  }
+  section#professores aside div.card div.descricao ul li a img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  
+  }
+}

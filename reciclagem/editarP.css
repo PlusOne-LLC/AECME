@@ -1,0 +1,629 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+
+body{
+    height: 100vh;
+    display: flex;
+}
+
+main{
+    padding-top: 9px;
+    display: flex;
+    width: 100%;
+}
+main a{
+    margin: 20px;
+    padding: 5px 30px;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+    text-decoration: none;
+    color: rgba(53, 51, 51, 0.753);
+    border: solid 0.5px rgba(53, 51, 51, 0.753);
+    background-color: #fff;
+}
+main a:hover{
+    border: solid 0.5px rgb(62, 218, 83);
+    color: rgb(62, 218, 83);
+}
+
+
+main section#editar{
+gap: 30px;
+width: 95%;
+padding: 20px;
+margin: auto;
+display: flex;
+}
+
+
+main section#editar div.novosDados{
+    padding: 20px 0px 0px;
+    border-radius: 20px;
+    margin-top: 90px;
+}
+main section#editar div.novosDados h1{
+    font-weight: 500;
+    font-size: 27px;
+    text-align: left;
+    margin: 10px;
+    color: #292828;
+}
+main section#editar div.novosDados p{
+    font-weight: 500;
+    font-size: 17px;
+    color: #0e0909;
+    text-align: left;
+    margin: 5px;
+}
+main section#editar div.novosDados div.formulario{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main section#editar div.novosDados div.formulario form{
+    width: 100%;
+    text-align: center;
+}
+main section#editar div.novosDados div.formulario form input{
+   height: 35px;
+   width: 90%;
+   outline: none;
+   display: block;
+   border: none;
+   background-color: transparent;
+   margin: 50px auto;
+   border-bottom: 1px solid #000000;
+}
+main section#editar div.novosDados div.formulario form input::-webkit-input-placeholder{
+    color: #5f5a5acb;
+    font-size: 16px;
+}
+main section#editar div.novosDados div.formulario form button{
+    width: 85%;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    background-color: #030303;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+main section#editar div.novosDados div.formulario form button:hover{
+    background-color: rgb(73, 221, 73);
+    border: solid 1px  rgb(73, 221, 73);
+    color: black;
+}
+main div#Editperfil{
+    width: 96%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+main div#Editperfil div.dados{  
+    gap: 5px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 3px 2px #00000070;
+    border-radius: 20px;
+    padding: 5px 2px 10px 2px; 
+}
+main div#Editperfil div.dados h1{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 50px;
+    color: #030303;
+}
+main div#Editperfil div.dados p{
+    font-size: 16.7px;
+    margin: 1px;
+}
+main div#Editperfil div.dados div h3{
+font-weight: 550;
+color: #478844;
+}
+main div#Editperfil div.dados div{
+ display: flex;
+ flex-direction: column;
+ align-items: start;
+ height: 20%;
+ width: 95%;
+ padding: 5px;
+ border-radius: 5px;
+ margin: 0;
+ background: #faf8f8;
+}
+main div#Editperfil div.dados div h3{
+  display: block;
+}
+
+main div#Editperfil div.foto{
+    padding: 0;
+    height: 200px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    margin-bottom: 20px;
+    margin-left: 1%;
+}
+main div#Editperfil div.foto img{
+    height: 180px;
+    border-radius: 50%;
+    margin: 5px;
+    width: 180px;
+    border: 2px solid #4fda42;
+}
+
+main div#Editperfil div.foto p{
+    margin: 5px;
+    font-size: 16px;
+}
+main div#Editperfil div.nome, div.profissao, div.especialidades, div.descricao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main div#Editperfil div.nome, div.profissao, div.especialidades, div.descricao, h3{
+    font-weight: normal;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+main div#Editperfil button{
+    height: 50px;
+    width: 30%;
+    border: none;
+    color: white;
+    font-size: 20px;
+    background-color: blue;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 10px;
+}
+main div#Editperfil button:hover{
+    background-color: rgb(96, 190, 245);
+    transition: all 0.3s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+    
+div.todos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px 40px 320px;
+    padding: 55px 1px;
+    display: none;
+    z-index: 1;
+    width: 30%;
+    transform: translate(-50%,-50%) scale(1.25);
+    background-color: #fff;
+    box-shadow: 2px 2px 5px 5px rgb(0, 0, 0,0.10);
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+
+div.todos form div.button{
+    height: 20%;
+    width: 100%;
+    background-color: rgb(143, 110, 110);
+}
+
+div.form1.active{
+    top:50%;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+    opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
+    display: flex;
+    align-items: center;
+    height: 280px;
+    justify-content: center;
+}
+div.form1.active img{
+    height: 159px;
+    width: 155px;
+    border-radius: 50%;
+    border: 2px solid blue;
+    margin: 10px 0px 0px 40px;
+}
+div.form1.active div.butons{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    gap: 6px;
+    margin-top: 70px;
+}
+div.form1.active button{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(55, 140, 219);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+div.form2.active{
+    top:50%;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+    opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
+    display: flex;
+    flex-direction: column;
+}
+div.form2.active h2{
+    font-weight: 500;
+}
+div.form2.active  input{
+    width: 94%;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    border: 0.5px solid black;
+    margin: 10px 0px;
+}
+div.form2.active div.butons{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+div.form2.active button{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(55, 140, 219);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+div.form3.active{
+    top:50%;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+    opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
+    display: flex;
+    flex-direction: column;
+}
+div.form3.active h2{
+    font-weight: 500;
+}
+div.form3.active  input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    border: 0.5px solid black;
+    margin: 10px 0px;
+}
+div.form3.active div.butons{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+div.form3.active button{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(55, 140, 219);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+div.form4.active{
+    top:50%;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+    opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
+    display: flex;
+    flex-direction: column;
+}
+div.form4.active h2{
+    font-weight: 500;
+}
+div.form4.active  input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    border: 0.5px solid black;
+    margin: 10px 0px;
+}
+div.form4.active div.butons{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+div.form4.active button{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(55, 140, 219);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+div.form5.active{
+    top:50%;
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+    opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
+    display: flex;
+    flex-direction: column;
+}
+div.form5.active h2{
+    font-weight: 500;
+}
+div.form5.active  input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    border: 0.5px solid black;
+    margin: 10px 0px;
+}
+div.form5.active div.butons{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+div.form5.active button{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(55, 140, 219);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+div.todos div.close-btn2{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+@media(max-width: 769px)
+{
+    main{
+        margin: 0;
+    }
+    main section#editar{
+        width: 100%;
+        height: 800px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+        padding: 0 10px  0px 10px;
+
+    }
+main div#Editperfil{
+    width: 100%;
+    margin: 10px 0px;
+    justify-content: center;
+    }
+    
+    main div.novosDados{
+        width: 90%;
+        height: 50%;
+        margin-top: 0;
+        padding: 0 0 30px 0;
+        
+
+    }
+    main section#editar div.novosDados h1{
+        margin: 10px;
+    }
+    main section#editar div.novosDados p{
+       margin-bottom: 20px;
+    }
+
+    div.form1.active{
+        top:50%;
+        position: absolute;
+        right: -22%;
+        padding: 10px 5px;
+        opacity: 1;
+        transform: translate(-50%,-50%) scale(1);
+        transition: top 0ms ease-in-out 0ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 200ms ease-in-out 0ms;
+        display: flex;
+        align-items: center;
+        height: 380px;
+        width:70%;
+        justify-content: center;
+    }
+    div.form1.active img{
+        height: 170px;
+        width: 170px;
+        border-radius: 50%;
+        border: 2px solid blue;
+        margin: 10px 0px 0px 10px;
+        text-align: center;
+    }
+    div.form1.active h2{
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+    }
+   
+    div.form2.active{
+        top:50%;
+        position: absolute;
+        right: -22%;
+        padding: 10px 5px;
+        opacity: 1;
+        transform: translate(-50%,-50%) scale(1);
+        transition: top 0ms ease-in-out 0ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 200ms ease-in-out 0ms;
+        display: flex;
+        height: 280px;
+        width: 70%;
+        flex-direction: column;
+    }
+    div.form2.active h2{
+        font-weight: 500;
+        font-size: 18px;
+    }
+    div.form2.active  input{
+        width: 94%;
+        height: 30px;
+        outline: none;
+        border-radius: 5px;
+        padding: 5px;
+        border: 0.5px solid black;
+        margin: 10px 0px;
+    }
+
+    
+    /* popup 2 */
+    div.form3.active{
+        top:50%;
+        position: absolute;
+        right: -22%;
+        padding: 10px 5px;
+        opacity: 1;
+        height: 280px;
+        width: 70%;
+        transform: translate(-50%,-50%) scale(1);
+        transition: top 0ms ease-in-out 0ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 200ms ease-in-out 0ms;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.form3.active h2{
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    div.form4.active{
+        top:50%;
+        right: -22%;
+        height: 280px;
+        width: 70%;
+        padding: 10px 5px;
+        position: absolute;
+        opacity: 1;
+        transform: translate(-50%,-50%) scale(1);
+        transition: top 0ms ease-in-out 0ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 200ms ease-in-out 0ms;
+        display: flex;
+        flex-direction: column;
+    }
+    div.form4.active  input{
+        width: 94%;
+        height: 30px;
+        outline: none;
+        border-radius: 5px;
+        padding: 5px;
+        border: 0.5px solid black;
+        margin: 10px 0px;
+    }
+    div.form4.active h2{
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    div.form5.active{
+        top:50%;
+        position: absolute;
+        opacity: 1;
+        right: -22%;
+        height: 280px;
+        width: 80%;
+        transform: translate(-50%,-50%) scale(1);
+        transition: top 0ms ease-in-out 0ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 200ms ease-in-out 0ms;
+        display: flex;
+        flex-direction: column;
+    }
+    div.form5.active h2{
+        font-weight: 500;
+        font-size: 18px;
+    }
+   
+}

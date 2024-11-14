@@ -1,0 +1,741 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --corAzul1:#0737bd;
+    --corVerde:rgb(39, 230, 141);
+    --corAzul2: #236fc5;
+    --corbranca1: #f0f6f7;
+}
+header{
+    background: white;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 75px;
+    border-top: 7px solid  var(--cor1);
+    box-shadow: 1px 1px 20px rgba(148, 147, 147, 0.377);
+}
+
+header nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+header nav  .logo a{
+    text-decoration: none;
+    color: black;
+}
+header div.pesquisa{
+    /* border: 1px solid black; */
+    display: flex;
+    border-radius: 20px;
+    height: 30px;
+    margin: 20px;
+    width: 300px;
+    padding: 5px;
+    justify-content: space-between;
+    box-shadow: 0 0  3px black;
+}
+ header  div.pesquisa form{
+    width: 100%;
+    display: flex;
+ }
+header div.pesquisa form input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 20px;
+
+}
+header div.pesquisa button{
+    border: none;
+    background: none;
+    height: 60%;
+    width: 6%;
+    cursor: pointer;
+    margin: 7px 5px 0 0; 
+}
+header div.pesquisa button img{
+    height: 100%;
+    width: 100%;
+}
+
+ nav.navbar{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between; 
+    padding: 0 40px;
+    height: 100%;
+}
+
+header ul.nav-menu{
+    display: flex;
+    align-items: center;
+    height: 96%;
+}
+
+header ul.nav-menu li{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+header ul.nav-menu li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ease;
+    padding: 32px;
+}
+
+header ul.nav-menu li a:hover{
+    background-color: var(--cor1);
+    background: var(--corAzul2);
+    color: white;
+}
+
+header .hamburger{
+    display: none;
+    cursor: pointer;
+}
+header .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background: #fff;
+    transition: all o.3s ease-in-out;
+}
+
+@media (max-width: 
+430px){
+    header  div.pesquisa{
+        display: none;
+     }
+    }
+@media (max-width:780px){
+
+    header .bar{
+        background-color: rgb(28, 82, 145);
+    }
+    header .hamburger{
+       margin-top: 20px;
+    }
+    header .hamburger{
+        display: block;
+    }
+    header .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    header .hamburger.active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg);
+    }
+    header  .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+     }
+
+    header ul.nav-menu li {
+        margin: auto;
+        padding: 0px;
+        width: 98%;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        
+    }
+
+    header ul.nav-menu li:hover{
+        border: 2px solid darkblue;
+    }
+    header ul.nav-menu li a{
+        padding: 5px;
+        color: #0a0a0a;
+    }
+    header ul.nav-menu li a:hover {
+        background: transparent;
+        color: aqua;
+    }
+    header ul.nav-menu{
+        height: 170px;
+        position: fixed;
+        left: -100%;
+        top: 75px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+        background: #ffffff;
+        overflow: hidden;
+     }
+     header .nav-item{
+        margin: 0px;
+
+     }
+    header .nav-menu.active{
+        left: 0;
+    }
+}
+
+
+/* ========================= main =========================== */
+
+main section#top {
+    background-image: url('../imagens/multi-uso/banner.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    height: 300px;
+}
+
+main section#top div.texto {
+    padding: 60px 0 0 150px ;
+    width: 50%;
+    color: #fff;
+}
+
+main section#top div.texto h1 {
+    font-size: 3em;
+}
+
+main section#top div.texto p {
+    margin: 10px 0 0 20px;
+}
+@media (max-width: 550px) {
+    main section#top {
+        padding-top: 100px;
+        height: 350px;
+    }
+    main section#top div.texto {
+        padding: 60px 0 0 50px ;
+        width: 70%;
+    }
+}
+
+/* Pesquisa */
+main div.pesquisa{
+    /* border: 1px solid black; */
+    display: flex;
+    border-radius: 20px;
+    height: 38px;
+    margin: 60px auto 10px auto;
+    width: 80%;
+    padding: 5px;
+    justify-content: space-between;
+    box-shadow: 0 0  3px black;
+}
+ main  div.pesquisa form{
+    width: 100%;
+    display: flex;
+ }
+main div.pesquisa form input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 20px;
+
+}
+main div.pesquisa button{
+    border: none;
+    background: none;
+    height: 70%;
+    width: 7%;
+    cursor: pointer;
+    margin: 5px 5px 0 0; 
+}
+main div.pesquisa button img{
+    height: 100%;
+    width: 100%;
+}
+/* Fim da Pesquisa */
+
+main section#cursosEmAlta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 30px;
+    background: #ffffff;
+}
+main section#cursosEmAlta h1{
+    font-size: 28px;
+    font-weight: 600;
+    /* color: #29aa4a; */
+    color: rgb(43, 231, 143);
+    line-height: 40px;
+    margin: 20px;
+}
+
+@media screen and (min-width: 430px) {
+    main div.pesquisa {
+        display: none;
+    }
+}
+
+
+.wrapper{
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+.wrapper i{
+    background-color: #fff;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+  
+}
+.wrapper i#rigth{
+    background-image: url("../../imagens/next.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 22px 15px 22px 19px;
+}
+.wrapper i#left{
+    background-image: url("../../imagens/prev.png");
+    background-repeat: no-repeat;
+    padding: 22px 22px 22px 25px;
+}
+.wrapper i:first-child{
+    left: -70px;
+}
+.wrapper i:last-child{
+    right: -60px;
+}
+
+.wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+.carousel :where(.card, .img){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel.no-transition{
+    scroll-behavior: auto;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+    
+}
+
+.carousel.dragging .card{
+    cursor: grab;
+    user-select: none;
+}
+.carousel .card{
+    scroll-snap-align: start;
+    height: 400px;
+    list-style: none;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 10px 10px 10px 10px rgb(253, 253, 253);
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+div.card-curso{
+    height: 330px;
+    width: 280px;
+    background-color: #fff;
+    border-radius: 20px;
+  
+    transition: .3s ease-in-out;
+    box-shadow: 0px 1px 3px 2px #0000003a;
+}
+
+div.card-curso div.foto-card{
+    height: 55%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #9072;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    gap: 5px;
+}
+div.card-curso div.foto-card img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: .3s ease-in-out;
+}
+div.card-curso div.foto-card img:hover{
+transform: scale(1.2);
+}
+div.card-curso div.conteudo{
+margin: 0;
+padding: 0;
+overflow: none;
+width: 100%;
+height: 45%;
+
+}
+div.card-curso div.conteudo div.titulo-preco{
+width: 95%;
+padding: 0 9px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 8px;
+}
+div.card-curso div.conteudo div.titulo-preco h3{
+  margin: 10px 0px 0px 0px;
+    font-weight: 500;
+}
+div.card-curso div.conteudo div.titulo-preco span{
+    font-weight: 600;
+    color: rgb(81, 211, 81);
+}
+div.card-curso div.conteudo div.professor{
+width: 100%;
+height: 40px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+cursor: pointer;
+}
+div.card-curso div.conteudo div.professor h3{
+    font-weight: 400;
+    margin: 0;
+}
+div.card-curso div.conteudo div.professor img{
+height: 40px;
+width: 40px;
+border-radius: 20px;
+border: solid 1px rgb(79, 233, 79);
+}
+
+div.card-curso div.conteudo div.btn{
+width: 100%;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+div.card-curso div.conteudo div.btn a{
+padding: 10px 80px;
+text-decoration: none;
+border: none;
+background-color: rgb(45, 120, 218);
+border-radius: 5px;
+display: flex;
+cursor: pointer;
+color: #fff;
+font-weight: 600;
+font-size: 15px;
+transition: .3s ease-in-out;
+}
+div.card-curso div.conteudo div.btn a:hover{
+transform: scale(0.9);
+}
+@media screen and (max-width: 900px) {
+    main section#cursosEmAlta h1{
+        width: 100%;
+    }
+    .wrapper .carousel{
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+    .wrapper i{
+        margin: 30px;
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .wrapper .carousel{
+        grid-auto-columns: 100%;
+    }
+    .wrapper i{
+        margin: 30px;
+    }
+}
+
+main > h1{
+    text-align: center;
+    /* color: #29aa4a; */
+    color: rgb(43, 231, 143);
+    margin-top: 30px;
+} 
+section#cursos {
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 2px solid black; */
+}
+aside.as1 ul{
+    display: flex;
+    list-style: none;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    width: 90%;
+    max-width: 760px;
+    margin: 20px auto;
+    background-color: var(--cor7);
+}
+ aside.as1 ul li{
+  margin: 5px 10px;
+}
+ aside.as1 ul li a{
+  text-decoration: none;
+  color: var(--cor2);
+  transition: all 0.3s ease-in-out;
+}
+ aside.as1 ul li a:hover{
+    color: rgb(43, 231, 143);
+}
+section#cursos aside.as2{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+div.card{
+    height: 330px;
+    width: 280px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+    box-shadow: 0px 1px 3px 2px #0000003a;
+}
+
+div.card div.foto-card{
+    height: 50%;
+    width: 100%;
+    background-color: #9072;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    gap: 5px;
+}
+div.card div.foto-card img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: .3s ease-in-out;
+}
+div.card div.foto-card img:hover{
+transform: scale(1.1);
+}
+div.card div.conteudo{
+    height: 50%;
+    width: 100%;
+    background-color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    padding: 10px 0;
+}
+div.card div.conteudo div.titulo-preco{
+width: 95%;
+padding: 0 9px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 8px;
+}
+div.card div.conteudo div.titulo-preco h3{
+    font-weight: 500;
+}
+div.card div.conteudo div.titulo-preco span{
+    font-weight: 500;
+}
+div.card div.conteudo div.professor{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+margin: 8px 0px 3px 0px;
+cursor: pointer;
+}
+div.card div.conteudo div.professor h3{
+    font-weight: 400;
+}
+div.card div.conteudo div.professor img{
+height: 30px;
+width: 30px;
+border-radius: 20px;
+border: solid 1px rgb(79, 233, 79);
+}
+
+div.card div.conteudo div.btn{
+width: 100%;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+}
+div.card div.conteudo div.btn button{
+padding: 8px 90px;
+border: none;
+background-color: rgb(90, 128, 252);
+border-radius: 5px;
+display: flex;
+cursor: pointer;
+color: #fff;
+font-size: 17px;
+transition: .3s ease-in-out;
+}
+div.card div.conteudo div.btn button:hover{
+transform: scale(0.9);
+}
+
+.card .capa{
+    background: #8B53FF;
+    width: 100%;
+    height: 50%;
+}
+
+.card .capa img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.card div.informacoes {
+    height: 50%;
+}
+
+li.card div.informacoes div.preco-categoria{
+     display: flex;
+     justify-content: space-between;
+     padding: 8px;
+}
+
+li.card div.informacoes div.preco-categoria p.categoria{
+    background-color: rgb(45, 151, 63);
+    color: #fff;
+    padding: 5px 10px;
+}
+li.card div.informacoes div.preco-categoria p.preco{
+    color: #000;
+    padding: 5px 10px;
+}
+li.card div.informacoes div.preco-categoria p.categoria{
+    background-color: rgb(73, 194, 73);
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+li.card div.informacoes div.descricao{
+    padding: 10px;
+}
+
+li.card div.informacoes div.descricao h3{
+  margin: 5px 0px;
+  font-size: 20px;
+}
+li.card div.informacoes div.descricao p{
+    font-weight: 300;
+}
+
+li.card hr{
+   border: solid 0.5px rgba(0, 0, 0, 0.411);
+   margin: 0px 15px;
+}
+
+li.card div.professor{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+li.card div.professor div.nome-foto{
+    display: flex;
+    align-items: center;
+    gap: 7px
+}
+li.card div.professor div.nome-foto div.foto{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow:hidden;
+}
+
+
+li.card div.professor div.nome-foto div.foto img{
+    height: 100%;
+    width: 100%;
+}
+
+li.card div.professor div.nome-foto p a{
+ text-decoration: none;
+ color: #031A9A;
+ font-weight: bold;
+
+}
+
+li.card div.professor div.reacoes{
+    display: flex;
+    gap: 5px;
+    padding: 5px;
+}
+
+li.card div.professor div.reacoes div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+li.card div.professor div.reacoes div img{
+    height: 20px;
+    width: 20px;
+
+}
+
+ /*------------------------------------FOOTER------------------------------------------------------*/

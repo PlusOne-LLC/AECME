@@ -1,0 +1,154 @@
+*{margin: 0; padding: 0; font-family: sans-serif;}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+section#top {
+    height: 100vh;
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../imagens/multi-uso/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+section#top .texto {
+    padding: 0 20px 0 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+section#top .texto h1 {
+    color: #fff;
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+section#top .texto p {
+    color: #fff;
+    font-size: 15px;
+}
+
+section#meusCursos {
+    margin-top: 50px;
+}
+
+div.curso-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    width: 95%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+}
+
+
+div.card-curso{
+  height: 330px;
+  width: 280px;
+  background-color: #fff;
+  border-radius: 20px;
+  transition: .3s ease-in-out;
+  box-shadow: 0px 1px 3px 2px #0000003a;
+}
+
+div.card-curso div.foto-card{
+  height: 55%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #9072;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  gap: 5px;
+}
+div.card-curso div.foto-card img{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: .3s ease-in-out;
+}
+div.card-curso div.foto-card img:hover{
+transform: scale(1.2);
+}
+div.card-curso div.conteudo{
+margin: 0;
+padding: 0;
+overflow: none;
+width: 100%;
+height: 45%;
+
+}
+div.card-curso div.conteudo div.titulo-preco{
+width: 95%;
+padding: 0 9px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 8px;
+}
+div.card-curso div.conteudo div.titulo-preco h3{
+margin: 10px 0px 0px 0px;
+  font-weight: 500;
+}
+div.card-curso div.conteudo div.titulo-preco span{
+  font-weight: 600;
+  color: #442333;
+}
+div.card-curso div.conteudo div.professor{
+width: 100%;
+height: 40px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+cursor: pointer;
+margin-bottom: 5px;
+}
+div.card-curso div.conteudo div.professor h3{
+  font-weight: 400;
+  margin: 0;
+}
+div.card-curso div.conteudo div.professor img{
+height: 40px;
+width: 40px;
+border-radius: 20px;
+border: solid 1px rgb(79, 233, 79);
+}
+
+div.card-curso div.conteudo div.btn{
+width: 100%;
+height: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+/* flex-direction: column; */
+gap: 5px;
+}
+
+div.card-curso div.conteudo div.btn a {
+    text-decoration: none;
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+div.card-curso div.conteudo div.btn a:hover {
+    background-color: rgba(29, 221, 39, 0.795);
+}
+div.card-curso div.conteudo div.btn a.del:hover {
+    background-color: rgba(255, 0, 0, 0.795);
+}
+

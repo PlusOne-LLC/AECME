@@ -1,0 +1,241 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+
+}
+body.hidden{
+    overflow: hidden;
+}
+
+/* loading  */
+#Cxloading{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    position: absolute;
+    z-index: 500;
+  }
+  .loader{
+    display: flex;
+  }
+  .dot{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 50%;
+    animation: scaling 1s ease-in-out infinite;
+    margin: 0px 20px;
+  }
+  .dot.d1{
+    animation-delay: -0.32s;
+  }
+  .dot.d3{
+    animation-delay: 0.32s;
+  }
+  @keyframes scaling{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+  }
+  @media (max-width: 780px){
+    .dot{
+        width: 30px;
+        height: 30px;
+        margin: 0px 10px;
+    }
+  }  
+  
+  div#siteTodo {
+    display: none;
+    height: 100vh;
+    position: absolute;
+  }
+
+div.boxVideo.ativo{
+    display: block;
+}
+div.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 760px;
+    height: 100%;
+    margin: auto;
+}
+div.boxVideo{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.575);
+    z-index: 5;
+    display: none;
+}
+
+div.boxVideo div.fechar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+div.boxVideo div.fechar button{
+ padding: 5px 8px;
+ cursor: pointer;
+ border-radius: 50%;
+ border: none;
+}
+div.boxVideo video{
+    width: 95%;
+    max-width: 760px;
+    max-height: 400px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+section#curso{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+}
+aside.imagem{
+    width: 50%;
+    height: 350px;
+    
+    position: relative;
+}
+aside.imagem .play{
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    padding-left: 9px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.26);
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+}
+aside.imagem img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    
+}
+aside.informacoes {
+    width: 50%;
+    padding: 10px 10px 0px 20px;
+}
+aside.informacoes h1{
+    font-size: 35px;
+    margin: 10px 0px 25px 0;
+}
+aside.informacoes p{
+    font-size: 18px;
+    margin: 5px 0px;
+}
+aside.informacoes p span{
+    font-weight: 600;
+    
+}
+aside.descricao{
+    padding: 20px;
+}
+aside.descricao h2{
+    margin-bottom: 10px;
+}
+section#listaAula{
+    width: 100%;
+    padding: 10px 10px 0px 70px;
+}
+section#listaAula ol{
+    padding: 15px 10px 0px 20px;
+}
+section#listaAula ol li{
+    margin: 5px 0;
+}
+div.botoes{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+div.botoes a{
+    display: block;
+    width: 50%;
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ffff;
+    background-color: #0051ca;
+    text-align: center;
+    transition: 0.3s;
+}
+div.botoes a:hover{
+    background-color: #589bff;
+}
+@media (max-width: 800px) {
+    aside.imagem{
+        width: 100%;
+    }
+    aside.informacoes {
+        width: 100%;
+        padding: 0px;
+    }
+    aside.informacoes h1{
+        font-size: 30px;
+        margin: 10px 0px 20px 0;
+    }
+    aside.descricao{
+        padding: 15px 0;
+    }
+    section#listaAula{
+        padding: 10px 10px 0px 20px;
+    }
+    section#listaAula ol{
+        padding: 15px 0px 0px 20px;
+    }
+    div.botoes a{
+        width: 170px;
+    }
+    div.botoes{
+        width: 300px;
+        gap: 8px;
+        margin-top: 20px;
+    }
+    div.botoes a{
+        display: block;
+        width: 50%;
+        padding: 10px 10px;
+        font-weight: bold;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #ffff;
+        background-color: #0051ca;
+        text-align: center;
+        transition: 0.3s;
+    }
+}
