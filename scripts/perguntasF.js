@@ -24,7 +24,7 @@
                 }
                 button1.textContent = '+';
                 // fim deles 
-            });
+            })
                 // FIM 
           
             // Segunda Card 

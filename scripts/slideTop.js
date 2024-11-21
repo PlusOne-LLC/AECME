@@ -9,7 +9,7 @@ function showNextImage() {
 }
 
 // Troca de imagem a cada 3 segundos (3000 milissegundos)
-setInterval(showNextImage, 6000);
+setInterval(showNextImage, 9000);
 
 
 
