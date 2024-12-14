@@ -1,71 +1,35 @@
-let button1 = document.querySelector("#s1");
-let button2 = document.querySelector("#s2");
-let button3 = document.querySelector("#s3");
-let button4 = document.querySelector("#s4");
+let buttons = document.querySelectorAll("section#servicos  a")
+let conteiners = document.querySelectorAll("section#servicos aside.containerRight div.conteudo")
 
-// asides
-let c1 = document.querySelector("#cont1");
-let c2 = document.querySelector("#cont2");
-let c3 = document.querySelector("#cont3");
-let c4 = document.querySelector("#cont4");
+buttons.forEach(click => {
+    click.addEventListener("click", function(event){
+        event.preventDefault()
+        let id = click.getAttribute('valor')
+        removeAtivoContainer()
+        adicionarAtivoContainer(id)
+        removeAtivoButton()
+        adicionaAtivoButton(click)
+    })
+})
 
+function adicionaAtivoButton(click) {
+    click.classList.add('ativo')
+}
+function removeAtivoButton() {
+    buttons.forEach(cont => {
+        cont.classList.remove('ativo')
+    });
+}
+function removeAtivoContainer() {
+    conteiners.forEach(cont => {
+        cont.classList.remove('ativo')
+    });
+}
+function adicionarAtivoContainer(id) {
+    let caixaAtiva = document.querySelector("#"+id)
+    caixaAtiva.classList.add('ativo')
+}
 
-button1.addEventListener("click",function(){
-    button1.classList.add("ativo");
-    c1.classList.add("ativo");
-
-    button2.classList.remove("ativo");
-    c2.classList.remove("ativo");
-
-    button3.classList.remove("ativo");
-    c3.classList.remove("ativo");
-
-    button4.classList.remove("ativo");
-    c4.classList.remove("ativo");
-    
-});
-button2.addEventListener("click",function(){
-    button1.classList.remove("ativo");
-    c1.classList.remove("ativo");
-
-    button2.classList.add("ativo");
-    c2.classList.add("ativo");
-
-    button3.classList.remove("ativo");
-    c3.classList.remove("ativo");
-
-    button4.classList.remove("ativo");
-    c4.classList.remove("ativo");
-    
-});
-button3.addEventListener("click",function(){
-    button1.classList.remove("ativo");
-    c1.classList.remove("ativo");
-
-    button2.classList.remove("ativo");
-    c2.classList.remove("ativo");
-
-    button3.classList.add("ativo");
-    c3.classList.add("ativo");
-
-    button4.classList.remove("ativo");
-    c4.classList.remove("ativo");
-    
-});
-button4.addEventListener("click",function(){
-    button1.classList.remove("ativo");
-    c1.classList.remove("ativo");
-
-    button2.classList.remove("ativo");
-    c2.classList.remove("ativo");
-
-    button3.classList.remove("ativo");
-    c3.classList.remove("ativo");
-
-    button4.classList.add("ativo");
-    c4.classList.add("ativo");
-    
-});
 
 const counts = document.querySelectorAll(".value");
 const speed = 10;
